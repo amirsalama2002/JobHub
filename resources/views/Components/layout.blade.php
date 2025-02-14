@@ -8,7 +8,7 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>JOBHUB</title>
 </head>
-<body>
+<body >
 <div class="min-h-full">
     <nav class="bg-gray-800">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -23,7 +23,7 @@
                 <a href="/" class="{{request()->is('/')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium text-gray-300">Home</a>
                 <a href="/about" class="{{request()->is('about')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium text-gray-300">Time</a>
                 <a href="/server" class="{{request()->is('server')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium text-gray-300">Server</a>
-                <a href="/countact" class="{{request()->is('countact')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium text-gray-300">Countact-Us</a>
+                <a href="/countact" class="{{request()->is('countact')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-sm font-medium text-gray-300">Jobs</a>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
           <a href="/" class="{{request()->is('/')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-4 py-2 text-sm font-medium text-gray-300">Home</a>
           <a href="/about" class="{{request()->is('about')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-4 py-2 text-sm font-medium text-gray-300">Time</a>
           <a href="/server" class="{{request()->is('server')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-4 py-2 text-sm font-medium text-gray-300">Server</a>
-          <a href="/countact" class="{{request()->is('countact')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-4 py-2 text-sm font-medium text-gray-300">Countact-Us</a>
+          <a href="/countact" class="{{request()->is('countact')?'bg-gray-900 text-white':'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-4 py-2 text-sm font-medium text-gray-300">Jobs</a>
         </div>
         <div class="border-t border-gray-700 pt-4 pb-3">
           <div class="flex items-center px-5">

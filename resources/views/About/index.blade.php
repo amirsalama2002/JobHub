@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:name>
-        About Page :
+        Time Page :
     </x-slot> 
     <ul role="list" class="divide-y divide-gray-100">
         <li class="flex justify-between gap-x-6 py-5">

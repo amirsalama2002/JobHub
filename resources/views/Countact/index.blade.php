@@ -1,11 +1,11 @@
 <x-layout>
     <x-slot:name>
-        Countact Page :
+      Jobs Page :
     </x-slot>  
     <style>
         #falcon{
             position: fixed;
-            right: 10px;
+            right: 0px;
 
         }
         .add{
@@ -21,7 +21,7 @@
             width:20rem;
             margin: 10px auto;
             padding: 5px;
-            border: 1px solid rgb(34, 30, 30);
+            border: 1px solid #123456;
             border-radius: 5px;
         }
         .add .count img{
@@ -34,16 +34,13 @@
             font-weight: bold;
         }
     </style>
-    <h2 class="text-sm/10 font-semibold text-gray-900">List of users</h2>
-    <a href="{{ route('countact.create') }}" id="falcon" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add</a>
+    <h2 class="text-sm/10 font-semibold text-gray-900">List of users :</h2>
+    <a href="{{ route('countact.create') }}" id="falcon" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Add</a>
     <ul>
         <div class="add">
         @foreach ($profiles as $profile)
             <div class="count">
             <li>
-                {{-- <strong>{{ $profile->first_name }} {{ $profile->last_name }} {{ $profile->city }}</strong> - {{ $profile->email }}
-
-                <img src="{{asset('storage/' . $profile->photo)}}" alt=""> --}}
                 <h2><strong>Leader : </strong>{{ $profile->username }}</h2>
                 <h1><strong> UserName :</strong> {{ $profile->first_name }} {{ $profile->last_name }} </h1>
                 <h4><strong> Address : </strong>  {{ $profile->city }}</h4>

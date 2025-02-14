@@ -10,14 +10,15 @@ class CountactOneController extends Controller
     public function index()
     {
         $profiles = CountactOne::all();
-        $name = CountactOne::all();
+        
         return view('Countact.index', compact('profiles'));
     }
-    public function show(Request $request)
+    // Show
+    public function show($id)
     {
         //
-        $name = CountactOne::all();
-        return view('Countact.show',compact('name'));
+        $falcon = CountactOne::find($id);
+        return view('Countact.show',compact('falcon'));
     }
     public function create()
     {
